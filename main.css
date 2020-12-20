@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: #ddd;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transition: all 1s ease;
+}
+
+.split h1 {
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  -webkit-text-stroke: 1px black;
+  top: 37%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.split .btn {
+  position: absolute;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2rem 0;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+
+.split .btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.left {
+  left: 0;
+  background-image: url('designer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right {
+  right: 0;
+  background-image: url('photographer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hover-right .right {
+  width: 70%;
+}
+
+.hover-right .left {
+  width: 30%;
+}
+
+.hover-left .left {
+  width: 70%;
+}
+
+.hover-left .right {
+  width: 30%;
+}
